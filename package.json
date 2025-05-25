@@ -1,0 +1,53 @@
+{
+  "name": "vosk-stt",
+  "version": "1.0.0",
+  "description": "Node.js bindings for Vosk speech recognition",
+  "main": "./lib/launcher.js",
+  "exports": {
+    "import": "./lib/launcher.js",
+    "require": "./lib/launcher.cjs"
+  },
+  "type": "module",
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [
+    "speech-recognition",
+    "vosk",
+    "stt",
+    "asr"
+  ],
+  "author": {
+    "name": "Milad",
+    "email": "milad.ashjari@gmail.com"
+  },
+  "contributors": [],
+  "scripts": {
+    "test": "node test/test.js",
+    "install": "node-gyp rebuild",
+    "start": "LD_LIBRARY_PATH=./third_party/lib node index.js"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.3.1"
+  },
+  "gypfile": true,
+  "devDependencies": {
+    "node-gyp": "^9.0.0"
+  },
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}
